@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<link href="signup.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+<div class="signup">
+<form>
+<h2 style="color: #fff;">sign Up</h2>
+<input type="text" name="username" placeholder="First Name">
+<br><br>
+<input type="text" name="username" placeholder="Last Name">
+<br><br>
+<input type="password" name="pass" placeholder="Password">
+<br><br>
+<input type="password" name="pass" placeholder="Confirm Password">
+<br><br>
+<input type="text" name="email" placeholder="Email address">
+<br><br>
+<input type="button" value="Sign up" onclick="myFunction()"><br><br>
+<div id="msg">Congratulations you have sign up successfully!!!!!</div>
+<script>
+function myFunction(){
+var x=document.getElementById("msg");
+x.className = "show";
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+Already have account?<a href="login.html" style="text-decoration: none; font-family: 'Play', sans-serif; color: yellow;">&nbsp;Log In</a>
+</form>
+</div>
+</body>
+</html>
